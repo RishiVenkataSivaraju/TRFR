@@ -23,7 +23,7 @@ const QuizForm = () => {
             answer,
             explanation
         };
-        const Register = await axios.post("http://localhost:8080/api/admin/mcq", formData);
+        const Register = await axios.post("http://192.168.0.131:8080/api/admin/mcq", formData);
         console.log(Register.data)
         console.log(formData);
     };
